@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo es utilizado por el proceso de paquete/publicación de nuestro proyecto Web. Puede personalizar el comportamiento de este proceso
+editando este archivo MSBuild. Para conocer más acerca de esto, visite http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\2016\masterado\mod17 Arquitectura de Software\project\public\web</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/es/System.Net.Http.Formatting.resources.dll">
+      <publishTime>07/11/2016 09:32:07</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Helpers.resources.dll">
+      <publishTime>07/11/2016 09:32:06</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Http.resources.dll">
+      <publishTime>07/11/2016 09:32:07</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Http.WebHost.resources.dll">
+      <publishTime>07/11/2016 09:32:07</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Mvc.resources.dll">
+      <publishTime>07/11/2016 09:32:06</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.Razor.resources.dll">
+      <publishTime>07/11/2016 09:32:05</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.WebPages.Deployment.resources.dll">
+      <publishTime>07/11/2016 09:32:06</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.WebPages.Razor.resources.dll">
+      <publishTime>07/11/2016 09:32:06</publishTime>
+    </File>
+    <File Include="bin/es/System.Web.WebPages.resources.dll">
+      <publishTime>07/11/2016 09:32:06</publishTime>
+    </File>
+    <File Include="bin/m17web.dll">
+      <publishTime>07/11/2016 22:58:25</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/11/2016 09:32:02</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Mvc.FixedDisplayModes.dll">
+      <publishTime>07/11/2016 09:32:04</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>07/11/2016 09:32:00</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>07/11/2016 09:32:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>07/11/2016 09:32:02</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>07/11/2016 09:32:05</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>07/11/2016 09:32:05</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>07/11/2016 09:32:03</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>07/11/2016 09:32:02</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>07/11/2016 09:32:02</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>07/11/2016 09:32:03</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>07/11/2016 09:32:03</publishTime>
+    </File>
+    <File Include="bootstrap/css/bootstrap.min.css">
+      <publishTime>07/11/2016 09:34:27</publishTime>
+    </File>
+    <File Include="bootstrap/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>07/11/2016 09:34:27</publishTime>
+    </File>
+    <File Include="bootstrap/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>07/11/2016 09:34:27</publishTime>
+    </File>
+    <File Include="bootstrap/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>07/11/2016 09:34:27</publishTime>
+    </File>
+    <File Include="bootstrap/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>07/11/2016 09:34:27</publishTime>
+    </File>
+    <File Include="bootstrap/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>07/11/2016 09:34:27</publishTime>
+    </File>
+    <File Include="bootstrap/img/avatar_2x.png">
+      <publishTime>07/11/2016 09:34:39</publishTime>
+    </File>
+    <File Include="bootstrap/js/angular.min.1.5.2.js">
+      <publishTime>07/11/2016 09:34:27</publishTime>
+    </File>
+    <File Include="bootstrap/js/angular.min.js">
+      <publishTime>07/11/2016 09:34:27</publishTime>
+    </File>
+    <File Include="bootstrap/js/app.js">
+      <publishTime>07/11/2016 09:34:27</publishTime>
+    </File>
+    <File Include="bootstrap/js/jquery-1.11.1.js">
+      <publishTime>07/11/2016 09:34:28</publishTime>
+    </File>
+    <File Include="bootstrap/js/main.js">
+      <publishTime>07/11/2016 09:34:28</publishTime>
+    </File>
+    <File Include="bootstrap/socket.io/socket.io.js">
+      <publishTime>07/11/2016 09:34:28</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>07/11/2016 09:31:45</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>07/11/2016 09:32:07</publishTime>
+    </File>
+    <File Include="Views/Cliente/Index.cshtml">
+      <publishTime>07/11/2016 18:29:06</publishTime>
+    </File>
+    <File Include="Views/Pedido/Index.cshtml">
+      <publishTime>07/11/2016 23:05:25</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>07/11/2016 09:33:56</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>07/11/2016 09:43:42</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>07/11/2016 09:31:45</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>07/11/2016 09:33:56</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>07/11/2016 22:58:27</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

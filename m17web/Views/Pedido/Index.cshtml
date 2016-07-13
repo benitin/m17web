@@ -1,0 +1,150 @@
+﻿@model m17web.Models.Carrito
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Brand</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1 superpuesto">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">@ViewBag.nombre</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div class="row">
+
+    <div class="col-sm-6 col-sm-offset-3 text-center">
+
+       @* @Html.BeginForm("Index","Pedido", FormMethod.Post, Model){*@
+        
+        <!-- -->
+        <form class="form-auth" method="post">
+            
+            <!--Productos-->
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Developers</h3>
+                    <div class="pull-right">
+                        <span class="clickable filter" data-toggle="tooltip" title="Toggle table filter" data-container="body">
+                            <i class="glyphicon glyphicon-filter"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <!--
+                    <input type="text" class="form-control" id="dev-table-filter" data-action="filter" data-filters="#dev-table" placeholder="Filter Developers" />    
+                    -->
+                    <table class="table table-hover" id="dev-table">
+                        <thead>
+                            <tr>
+                                <th>Código</th>
+                                <th>Producto</th>
+                                <th>Precio</th>
+                                <th>Cantidad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in @Model.items)
+                            {
+                                <tr>
+                                    <td>@Html.DisplayFor(modelItem => item.producto.id)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.producto.descripcion)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.producto.precio)</td>
+                                    <td>
+                                        <div class="form-group">
+                                            @Html.EditorFor(modelItem => item.cantidad, new { htmlAttributes = new { @class = "form-control text-center" } })
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+
+                        </tbody>
+                    </table>
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <!--
+                            <span class="input-group-addon">
+                                <i class="glyphicon glyphicon-user"></i>
+                            </span>
+                                -->
+                            <span>Punto de Entrega</span>
+                            <select name="puntoEntrega">
+                                @foreach (var item in @Model.puntosEntrega)
+                                {
+                                    <option value="@item.id">@item.nombre - @item.direccion</option>
+                                }
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <i class="glyphicon glyphicon-user"></i>
+                            </span>
+                            <input class="form-control" placeholder="fecha limite" name="fechaLimite" type="date" autofocus>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="panel-footer">
+                    <input type="submit" value="Guardar" class="btn btn-primary" />
+                </div>
+            </div>
+
+            <br>
+            
+            <input type="hidden" value="0" ng-model="rolData.idRol">
+    </div>
+    <!--Fin productos-->
+    <!---->
+    </form>
+    
+
+    @*}*@
+</div>
+</div>
+
+<script>
+    function add(factor) {
+        input = document.getElementById('cantidad')
+        value = input.value;
+        /*if (input.min < value && input.max > value) {
+            value = value + factor;
+            alert(input.value)
+        }*/
+        value = parseInt(value) + factor;
+        input.value = value
+        return false
+    }
+</script>
+
